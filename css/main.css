@@ -1,0 +1,208 @@
+:root {
+    --colorazul: #227df2;
+    --colorfondo: #f0f2f5;
+    --colorlinks: #616161;
+    --colorblanco: #ffffff;
+    --colorverde: #42b72a;
+}
+
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin:0;
+    box-sizing: border-box;
+    
+}
+
+.imgfacebook {
+    width: 300px;
+}
+
+@media (min-width:0px) {
+    .flex {
+        display: flex;
+        flex-direction: column;
+        padding: 0% 0% 0 0;
+        align-items: center;
+
+    }
+    .facebook {
+        padding: 0% 0% 0px 0%;
+        text-align: center;
+    }
+
+    
+    .texto1 {
+        text-align:center;
+        padding: 0 0 0 0px;
+        font-size:1.6rem;
+    }
+
+    .registro {
+        margin: 5% 0% 5% 0%;
+        padding: 0 25px 0 25px;
+        box-shadow:  0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+        border-radius: 15px;  /*con esto se hace el borde redondeado de un radio determinado */
+        display: flex;
+        flex-direction: column;
+        background-color:var(--colorblanco);
+        width: 400px;  /*determina el ancho de la division*/
+        height: 350px; /*determina el alto de la division*/
+    }
+}
+
+@media (min-width:800px) {
+    .flex {
+        
+        display: flex;
+        flex-direction: row;
+        padding: 0% 10% 0 0;
+    }
+    .facebook {
+        padding: 0% 9% 0px 10%;
+        text-align: left;
+    }
+    
+    .texto1 {
+        text-align:left;
+        padding: 0 0 0 30px;
+        font-size:1.6rem;
+    }
+
+    .registro {
+        margin: 30% 0% 5% 0%;
+        padding: 0 25px 0 25px;
+        box-shadow:  0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+        border-radius: 15px;  /*con esto se hace el borde redondeado de un radio determinado */
+        display: flex;
+        flex-direction: column;
+        background-color:var(--colorblanco);
+        width: 400px;  /*determina el ancho de la division*/
+        height: 350px; /*determina el alto de la division*/
+    }
+}
+
+.flex {
+    margin: 0px 0px 0px 0px;
+    background-color: var(--colorfondo);
+    height: 700px;
+    width: fit-content;  /*permite que el color de todo el background vaya hasta el final*/
+}
+
+
+.entradatexto {
+    padding: 15px 15px 15px 5px;
+    margin: 20px 0 0px 0;
+    border: solid 2px;
+    border-color: #e4e3e3;
+    border-radius: 7px;
+    text-align: left;
+    
+}
+
+.entradatexto:focus {
+    border: solid 2px;
+    border-color: #770707;
+}
+
+.link1 {
+    padding: 5px 5px 5px 5px;
+    margin: 10px 0 10px 0;
+    text-align: center;
+    color:var(--colorazul);
+    text-decoration: none;
+}
+
+.link1:hover {   /*.hover es lo que hace cuando esta siendo seleccionado con el mouse */
+    text-decoration: underline;
+} 
+
+.crea {
+    color: black;
+    font-weight:bold;
+    text-decoration: none;
+}
+.crea:hover {   /*.hover es lo que hace cuando esta siendo seleccionado con el mouse */
+    text-decoration: underline;
+} 
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+#iniciarsesion {
+    background-color: var(--color-1);
+    color: var(--colorblanco);
+    font-weight:bold;
+    background-color: var(--colorazul);
+    border: 0;   /* quita el borde del boton */
+    font-size: 20px;
+    border-radius: 7px;
+    margin-top: 15px;
+    padding: 10px 0 10px 0;
+    transition: all .5s;
+}
+
+#iniciarsesion:hover {
+    background-color: #0f4c9b;
+
+}
+
+#crearcuenta {
+    background-color: var(--colorverde);
+    font-size: 17px;
+    color: var(--colorblanco);
+    border: 0; 
+    font-weight:bold;
+    border-radius: 7px;
+    margin: 25px 60px 0 60px;
+    padding: 10px 0 10px 0;
+    transition: all .5s;
+}
+
+#crearcuenta:hover {
+    background-color: #30851f;
+}
+
+#creapagina{
+    margin: 0% 0% 20% 0%;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.pie {
+    padding: 1% 12% 1% 12%;
+}
+
+.idiomas {
+    margin: 0 0 2% 0;
+}
+
+.idiomas2 {
+    margin: 2% 0 0 0;
+}
+
+
+.idioma {
+    color: var(--colorlinks);
+    text-decoration: none;  /*quita la linea de los hipervinculos */
+    font-size:0.8rem;
+}
+
+.idioma:hover {   /*.hover es lo que hace cuando esta siendo seleccionado con el mouse */
+    text-decoration: underline;
+} 
+
+.links {
+    color: var(--colorlinks);
+    text-decoration: none;
+    font-size:0.8rem;
+}
+
+#meta {
+    margin: 20px 0 0 0;
+    color: var(--colorlinks);
+    font-size:0.8rem;
+}
